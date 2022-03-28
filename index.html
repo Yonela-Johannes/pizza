@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <div>
+    <div class="main-container">
         <div class="header">
-            <h1>Perfect Pizza</h1>
+            <h1>
+                <span>P
+
+                </span>erfect <span>P</span>izza
+                <img src="./img/logo.png" class="logo" />
+            </h1>
+        </div>
+        <div class="container">
             <div class="cartTotal" style="margin-left: auto">
                 <strong>Grand total:</strong>
                 <span>R300.00</span>
-                <a href="#">Show cart</a>
+                <button class="showCart">Show cart</button>
             </div>
-            <div class="cart">
+            <div class="cart hide">
                 <h4>Shopping cart</h4>
                 <table>
                     <tr>
@@ -58,61 +65,70 @@
                         </td>
                     </tr>
                 </table>
+                <strong>Grand total:</strong>
+                <span>R300.00</span>
                 <div>
                     <button class="btn">Check out</button>
-                    <button class="btn">Hide cart</button>
+                    <button class="btn hideCart">Hide cart</button>
                 </div>
             </div>
-        </div>
-        <div class="specials">
-            <div class="medium">
-                <div class="info">
-                    <img src="https://image.shutterstock.com/image-vector/italian-pizza-tomato-sausage-olive-600w-554691619.jpg"
-                        alt="">
-                    <h2>Medium Pizza</h2>
-                    <h3>R78.99</h3>
-                    <i>
-                        medium margeritha pizza with 3 toppings max.
-                        2 or less meat topping.
-                        3 or less other toppings.
-                    </i>
+            <div class="specials">
+                <div class="medium">
+                    <div class="info">
+                        <img class='pizza-image' src="./img/medium.png" alt="">
+                        <h2>Medium Pizza</h2>
+                        <h3>R78.99</h3>
+                        <ul>
+                            <li>
+                                medium margeritha pizza with 3 toppings max.
+                            </li>
+                            <li>
+                                2 or less meat topping.
+                            </li>
+                            <li>
+                                3 or less other toppings.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="orderBox">
+                        <button class="btn" style="margin-left: auto">Order medium pizza</button>
+                    </div>
                 </div>
-                <div class="orderBox">
-                    <button class="btn" style="margin-left: auto">Order medium pizza</button>
+                <div class="large">
+                    <div class="info">
+                        <img class="pizza-image" src="./img/large.png" alt="">
+                        <h2>Large Pizza</h2>
+                        <h3>R114.99</h3>
+                        <ul>
+                            <li>
+                                large margeritha pizza with 3 toppings max.
+                            </li>
+                            <li>
+                                3 meat toppings max.
+                            </li>
+                            <li>
+                                3 or less other toppings.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="orderBox">
+                        <button class="btn" style="margin-left: auto">Order large pizza</button>
+                    </div>
                 </div>
-            </div>
-            <div class="large">
-                <div class="info">
-                    <img src="https://image.shutterstock.com/image-vector/italian-pizza-tomato-sausage-olive-600w-554691619.jpg"
-                        alt="">
-                    <h2>Large Pizza</h2>
-                    <h3>R114.99</h3>
-                    <i>
-                        large margeritha pizza with 3 toppings max.
-                        3 meat toppings max.
-                        3 or less other toppings.
-                    </i>
-                </div>
-                <div class="orderBox">
-                    <button class="btn" style="margin-left: auto">Order large pizza</button>
-                </div>
-            </div>
-            <div class="small">
-                <div class="info">
-                    <img src="https://image.shutterstock.com/image-vector/italian-pizza-tomato-sausage-olive-600w-554691619.jpg"
-                        alt="">
-                    <h2>Small Pizza</h2>
-                    <h3>R48.99</h3>
-                    <i>
+                <div class="small">
+                    <div class="info">
+                        <img class="pizza-image" src="./img/small.png" alt="">
+                        <h2>Small Pizza</h2>
                         <ul>
                             <li>small pizza with 3 toppings</li>
                             <li>1 meat topping.</li>
                             <li>3 or less other toppings.</li>
                         </ul>
-                    </i>
-                </div>
-                <div class="orderBox">
-                    <button class="btn" style="margin-left: auto">Order small pizza</button>
+                    </div>
+                    <div class="orderBox">
+                        <button class="btn" style="margin-left: auto">Order small pizza</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,6 +149,7 @@
             </div>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
